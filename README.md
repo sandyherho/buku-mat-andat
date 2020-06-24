@@ -19,5 +19,4 @@ Deaktivasi lingkungan komputasi:<br>
 
 Penerbit: [Berlajar](https://berlajar.org/) 
 
-
 ![Berlajar](berlajar.png)
