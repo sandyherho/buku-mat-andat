@@ -10,8 +10,10 @@
 <p align="justify">Melalui catatan singkat ini penyusun hendak mengajak pembaca untuk berkenalan dengan konsep - konsep matematika yang diperlukan sebagai fondasi untuk memahami dan mengimplementasikan algoritma - algoritma yang digunakan di dalam analisis data melalui bahasa pemrograman Python dan R (penyusun mengharapkan familiaritas pembaca terhadap konsep - konsep kedua bahasa pemrograman tersebut sebelum mempelajari buku ini). Catatan ini sendiri didesain sebagai jembatan kesenjangan pengetahuan di dunia industri dan dunia akademik terkait konsep - konsep dasar matematika yang dibutuhkan bagi para analis data junior, pengembang piranti lunak, mahasiswi/a dari jurusan non-eksakta, dan kaum awam guna berkontribusi di dalam pengembangan kecerdasan buatan melalui analisis data.</p>
 
 Kompilasi: pdfLaTeX (TeX Live v2019)<br><br>
-Instalasi lingkungan komputasi (pastikan kalian telah melakukan instalasi [Miniconda 3](https://docs.conda.io/en/latest/miniconda.html) atau [Anaconda 3](https://www.anaconda.com/products/individual)): `conda env create -f buku-mat-andat.yml` <br><br>
-Aktivasi lingkungan komputasi: `conda activate buku-mat-andat`<br><br>
+Instalasi lingkungan komputasi (pastikan kalian telah melakukan instalasi [Miniconda 3](https://docs.conda.io/en/latest/miniconda.html) atau [Anaconda 3](https://www.anaconda.com/products/individual)): <br>
+`conda env create -f buku-mat-andat.yml` <br><br>
+Aktivasi lingkungan komputasi:<br>
+`conda activate buku-mat-andat`<br><br>
 Penerbit: [Berlajar](https://berlajar.org/) 
 
 
