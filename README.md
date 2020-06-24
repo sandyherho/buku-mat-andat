@@ -14,6 +14,9 @@ Instalasi lingkungan komputasi (pastikan kalian telah melakukan instalasi [Minic
 `conda env create -f buku-mat-andat.yml` <br><br>
 Aktivasi lingkungan komputasi:<br>
 `conda activate buku-mat-andat`<br><br>
+Deaktivasi lingkungan komputasi:<br>
+`conda deactivate`<br><br>
+
 Penerbit: [Berlajar](https://berlajar.org/) 
 
 
