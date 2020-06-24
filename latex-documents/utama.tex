@@ -1,0 +1,270 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Matematika Dasar: Pengantar Masuk ke Alam Pikir Kecerdasan Buatan       %%                                  
+%% Penyusun: Sandy Herho (sandyherho.github.io) dan Dasapta Erwin Irawan   %%
+%% License: CC0.v1                                                         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[b5paper,11pt]{book}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{hyperref}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{breqn}
+\usepackage[bahasa]{babel}
+\usepackage{float}
+\usepackage{fancyvrb}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{mathtools}
+\usepackage{xfrac}  
+\usepackage{optidef}
+\usepackage{enumitem}
+\setcounter{secnumdepth}{0}
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+\DeclareMathOperator*{\minimize}{min}
+
+% R
+\lstset{frame=tb,
+language=R,
+keywordstyle=\color{blue},
+alsoletter={.}
+}
+
+%Jupyter
+
+\definecolor{white}{rgb}{1,1,1}
+\definecolor{mygreen}{rgb}{0,0.4,0}
+\definecolor{light_gray}{rgb}{0.97,0.97,0.97}
+\definecolor{mykey}{rgb}{0.117,0.403,0.713}
+
+\tcbuselibrary{listings}
+\newlength\inwd
+\setlength\inwd{1.3cm}
+
+\newcounter{ipythcntr}
+\renewcommand{\theipythcntr}{\texttt{[\arabic{ipythcntr}]}}
+
+\newtcblisting{pyin}[1][]{%
+  sharp corners,
+  enlarge left by=\inwd,
+  width=\linewidth-\inwd,
+  enhanced,
+  boxrule=0pt,
+  colback=light_gray,
+  listing only,
+  top=0pt,
+  bottom=0pt,
+  overlay={
+    \node[
+      anchor=north east,
+      text width=\inwd,
+      font=\footnotesize\ttfamily\color{mykey},
+      inner ysep=2mm,
+      inner xsep=0pt,
+      outer sep=0pt
+      ] 
+      at (frame.north west)
+      {\refstepcounter{ipythcntr}\label{#1}In \theipythcntr:};
+  }
+  listing engine=listing,
+  listing options={
+    aboveskip=1pt,
+    belowskip=1pt,
+    basicstyle=\footnotesize\ttfamily,
+    language=Python,
+    keywordstyle=\color{mykey},
+    showstringspaces=false,
+    stringstyle=\color{mygreen}
+  },
+}
+\newtcblisting{pyprint}{
+  sharp corners,
+  enlarge left by=\inwd,
+  width=\linewidth-\inwd,
+  enhanced,
+  boxrule=0pt,
+  colback=white,
+  listing only,
+  top=0pt,
+  bottom=0pt,
+  overlay={
+    \node[
+      anchor=north east,
+      text width=\inwd,
+      font=\footnotesize\ttfamily\color{mykey},
+      inner ysep=2mm,
+      inner xsep=0pt,
+      outer sep=0pt
+      ] 
+      at (frame.north west)
+      {};
+  }
+  listing engine=listing,
+  listing options={
+      aboveskip=1pt,
+      belowskip=1pt,
+      basicstyle=\footnotesize\ttfamily,
+      language=Python,
+      keywordstyle=\color{mykey},
+      showstringspaces=false,
+      stringstyle=\color{mygreen}
+    },
+}
+\newtcblisting{pyout}[1][\theipythcntr]{
+  sharp corners,
+  enlarge left by=\inwd,
+  width=\linewidth-\inwd,
+  enhanced,
+  boxrule=0pt,
+  colback=white,
+  listing only,
+  top=0pt,
+  bottom=0pt,
+  overlay={
+    \node[
+      anchor=north east,
+      text width=\inwd,
+      font=\footnotesize\ttfamily\color{mykey},
+      inner ysep=2mm,
+      inner xsep=0pt,
+      outer sep=0pt
+      ] 
+      at (frame.north west)
+      {\setcounter{ipythcntr}{\value{ipythcntr}}Out#1:};
+  }
+  listing engine=listing,
+  listing options={
+      aboveskip=1pt,
+      belowskip=1pt,
+      basicstyle=\footnotesize\ttfamily,
+      language=Python,
+      keywordstyle=\color{mykey},
+      showstringspaces=false,
+      stringstyle=\color{mygreen}
+    },
+}
+%Jupyter
+
+% listing
+\usepackage{listings}
+\usepackage{color}
+\usepackage{float}
+\usepackage{verbatim}
+\usepackage{alltt}
+\usepackage{caption}
+\usepackage{gensymb}
+\usepackage[super]{nth}
+
+
+
+%warna baru
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+%code listing dinamakan "mystyle"
+\lstdefinestyle{mystyle}{
+  backgroundcolor=\color{backcolour},   commentstyle=\color{codegreen},
+  keywordstyle=\color{magenta},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{codepurple},
+  basicstyle=\footnotesize,
+  breakatwhitespace=false,         
+  breaklines=true,                 
+  captionpos=b,                    
+  keepspaces=true,                 
+  numbers=left,                    
+  numbersep=5pt,                  
+  showspaces=false,                
+  showstringspaces=false,
+  showtabs=false,                  
+  tabsize=2
+}
+
+%"mystyle" code listing set
+\lstset{style=mystyle}
+%listing
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% halaman dedikasi                                                             % 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newenvironment{dedication}
+{
+   \cleardoublepage
+   \thispagestyle{empty}
+   \vspace*{\stretch{1}}
+   \hfill\begin{minipage}[t]{0.66\textwidth}
+   \raggedright
+}
+{
+   \end{minipage}
+   \vspace*{\stretch{3}}
+   \clearpage
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\renewcommand{\@chapapp}{}
+\newenvironment{chapquote}[2][2em]
+  {\setlength{\@tempdima}{#1}%
+   \def\chapquote@author{#2}%
+   \parshape 1 \@tempdima \dimexpr\textwidth-2\@tempdima\relax%
+   \itshape}
+  {\par\normalfont\hfill--\ \chapquote@author\hspace*{\@tempdima}\par\bigskip}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Halaman awal dalam buku yang memuat hal - hal seperti:Judul Buku, sub-judul, dan nama penyusun.%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Judul Buku dan Sub-Judul
+\title{\mbox{\textbf{\huge Matematika Dasar}} \\ \\
+\small Pengantar Menuju Analisis Data}
+% penyusun
+\author{\textsc{Sandy Hardian Susanto Herho}\thanks{ \href{mailto:sandyherho@protonmail.ch}{sandyherho@protonmail.ch} }}
+
+
+\begin{document}
+
+\frontmatter
+\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dedikasi Buku %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{dedication}
+Untuk publik sains terbuka Indonesia.\\
+\end{dedication}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DAFTAR Isi                                                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{pengantar}
+\tableofcontents
+%\listoffigures
+%\listoftables
+
+%%%%%%%%%%%%%%%%
+% ISI %
+%%%%%%%%%%%%%%%%
+\mainmatter
+\include{bab1}
+\blankpage
+\include{bab2}
+\blankpage
+\include{bab3}
+\blankpage
+\include{soal_jawab}
+\blankpage
+
+\nocite{*}
+\bibliographystyle{unsrt}
+\bibliography{pustaka}
+\end{document}
