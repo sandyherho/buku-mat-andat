@@ -1,5 +1,6 @@
 # Matematika Dasar: Pengantar Menuju Analisis Data
 
+[![DOI](https://zenodo.org/badge/274554601.svg)](https://zenodo.org/badge/latestdoi/274554601)<br>
 [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
 [![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://osf.io/gvf37/)<br>
 [![forthebadge](https://forthebadge.com/images/badges/built-by-hipsters.svg)](https://forthebadge.com)
