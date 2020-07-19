@@ -2,7 +2,6 @@
 
 [![DOI](https://zenodo.org/badge/274554601.svg)](https://zenodo.org/badge/latestdoi/274554601)<br>
 [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
-[![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://osf.io/gvf37/)<br>
 [![forthebadge](https://forthebadge.com/images/badges/built-by-hipsters.svg)](https://forthebadge.com)
 
 <p align="justify"> Keilmuan analisis data menjadi primadona dalam perbincangan global di satu dekade terakhir. Hal ini ditandai dengan semakin terintegrasinya kehidupan umat manusia dengan teknologi yang berbuntut dengan lahirnya kolam data raksasa (big data) yang dapat kemudian dijadikan bahan bagi pemelajaran algoritma kecerdasan buatan untuk menghasilkan produk yang diharapkan dapat beradaptasi dengan kebutuhan pengguna.</p>
@@ -17,6 +16,6 @@ Aktivasi lingkungan komputasi:<br>
 Deaktivasi lingkungan komputasi:<br>
 `conda deactivate`<br><br>
 
-Penerbit: [Berlajar](https://berlajar.org/) 
+Penerbit: [WCPL ITB](http://weather.meteo.itb.ac.id/) 
 
-![Berlajar](berlajar.png)
+![WCPL ITB](wcpl.png)
